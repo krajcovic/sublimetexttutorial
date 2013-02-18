@@ -17,7 +17,7 @@ import cz.monetplus.asors.repo.merchant.service.TxLiveService;
 
 @Service("liveTxLoading")
 public class LiveTxLoadingImpl implements LiveTxLoading {
-	
+
 	@Autowired
 	private TransactBuffDao transactBuffDao;
 
@@ -26,11 +26,11 @@ public class LiveTxLoadingImpl implements LiveTxLoading {
 
 	@Autowired
 	private TxLiveService txLiveService;
-	
+
 	/* (non-Javadoc)
 	 * @see cz.monetplus.asors.ptlf_java.TxLiveTxLoading#run()
 	 */
-	public void run() {
+	public void <run></run> {
 		Calendar cal = GregorianCalendar.getInstance();
 		cal.setTime(new Date());
 		cal.add(Calendar.MINUTE, -2);
